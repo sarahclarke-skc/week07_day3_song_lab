@@ -4,7 +4,7 @@ import IndivSong from './IndivSong';
 const SongList = ({ songs }) => {
 
     const songItems = songs.map((song, index) => {
-        return <IndivSong song={song} key={index} />
+        return <IndivSong song={song} key={index} rank={index} />
     })
 
     return (
