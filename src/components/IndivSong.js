@@ -11,6 +11,7 @@ const IndivSong = ({ song, rank }) => {
     return (
         <div style={songStyle}>
             <h3>{rank + 1}</h3>
+            <img src={song['im:image'][2].label} />
             <h3>{song['im:name'].label}</h3>
             <h3>{song['im:artist'].label}</h3>
         </div>
