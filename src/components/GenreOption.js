@@ -14,7 +14,10 @@ const GenreOption = ({setGenre}) => {
                 <option value="rock" key='2'>Top 20: Rock</option>
                 <option value="dance" key='3'>Top 20: Dance</option>
                 <option value="country" key='4'>Top 20: Country</option>
+                <option value="blues" key='6'>Top 20: Blues</option>
+                <option value="kpop" key='6'>Top 20: K-pop</option>
                 <option value="baby" key='5'>Top 20: Baby</option>
+
             </select>
         </>
     )

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const IndivSong = ({ song, rank }) => {
+
     
     const songStyle = {
         margin: '4rem 0',
@@ -14,6 +15,9 @@ const IndivSong = ({ song, rank }) => {
             <img src={song['im:image'][2].label} />
             <h3>{song['im:name'].label}</h3>
             <h3>{song['im:artist'].label}</h3>
+            <audio controls src={song.link[1].attributes.href}>
+                <code>audio</code> element.
+            </audio>
         </div>
     )
 }

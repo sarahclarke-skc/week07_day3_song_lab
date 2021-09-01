@@ -32,6 +32,14 @@ const ChartContainer = () => {
             fetch('https://itunes.apple.com/gb/rss/topsongs/limit=20/genre=4/json')
             .then(res => res.json())
             .then(songs => setSongs(songs.feed.entry))
+        } else if (genre === 'kpop') {
+            fetch('https://itunes.apple.com/gb/rss/topsongs/limit=20/genre=51/json')
+            .then(res => res.json())
+            .then(songs => setSongs(songs.feed.entry))
+        } else if (genre === 'blues') {
+            fetch('https://itunes.apple.com/gb/rss/topsongs/limit=20/genre=2/json')
+            .then(res => res.json())
+            .then(songs => setSongs(songs.feed.entry))
         }
     }
 
